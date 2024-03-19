@@ -1,0 +1,45 @@
+﻿<Window x:Class="PDFtoWordConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PDFtoWordConverter"
+        mc:Ignorable="d"
+        Title="Convertor" MinHeight="110" Height="110" MaxHeight="110" MinWidth="200" Width="200" MaxWidth="200"
+        WindowStartupLocation="CenterScreen" Background="#FF312B2C"
+        BorderThickness="0">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="onMouseEnterBackgroundColor" Color="#FF104D5D" />
+        <SolidColorBrush x:Key="onMouseLeaveBackgroundColor" Color="#FF32B0D2" />
+
+        <ControlTemplate x:Key="NoMouseOverButtonTemplate"
+                 TargetType="Button">
+        <Border Background="{TemplateBinding Background}"  
+          BorderBrush="{TemplateBinding BorderBrush}"  
+          BorderThickness="0"
+                    CornerRadius="10 0 10 0">
+                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"  
+                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+            </Border>
+
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled"  
+                         Value="False">
+                    <Setter Property="Background" Value="{x:Static SystemColors.ControlLightBrush}" />
+                    <Setter Property="Foreground" Value="{x:Static SystemColors.GrayTextBrush}" />
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
+
+    <Grid>
+        <Button Name="Convert_btn" Height="30" Width="130" Content="Convert .pdf to .word" 
+                BorderThickness="0" Foreground="White" 
+                HorizontalAlignment="Center" VerticalAlignment="Center"
+                Template="{StaticResource NoMouseOverButtonTemplate}"
+                Background="{StaticResource onMouseLeaveBackgroundColor}"
+                Click="Convert_btn_Click" 
+                MouseEnter="Convert_btn_MouseEnter" MouseLeave="Convert_btn_MouseLeave"></Button>
+    </Grid>
+</Window>

@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\Convertor\PDFtoWordConverter\PDFtoWordConverter\bin\Release\net7.0-windows\publish\PDFtoWordConverter.exe
+C:\Users\User\Desktop\Convertor\PDFtoWordConverter\PDFtoWordConverter\bin\Release\net7.0-windows\publish\PDFtoWordConverter.dll
+C:\Users\User\Desktop\Convertor\PDFtoWordConverter\PDFtoWordConverter\bin\Release\net7.0-windows\publish\PDFtoWordConverter.deps.json
+C:\Users\User\Desktop\Convertor\PDFtoWordConverter\PDFtoWordConverter\bin\Release\net7.0-windows\publish\PDFtoWordConverter.runtimeconfig.json
+C:\Users\User\Desktop\Convertor\PDFtoWordConverter\PDFtoWordConverter\bin\Release\net7.0-windows\publish\PDFtoWordConverter.pdb
+C:\Users\User\Desktop\Convertor\PDFtoWordConverter\PDFtoWordConverter\bin\Release\net7.0-windows\publish\Spire.Pdf.dll
