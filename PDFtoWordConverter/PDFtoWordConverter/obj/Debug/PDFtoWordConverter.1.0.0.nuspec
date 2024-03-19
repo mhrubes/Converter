@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>PDFtoWordConverter</id>
+    <version>1.0.0</version>
+    <authors>PDFtoWordConverter</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net7.0-windows7.0">
+        <dependency id="Spire.PDF" version="10.3.7" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net7.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net7.0-windows7.0/convertor.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\User\Desktop\Convertor\PDFtoWordConverter\PDFtoWordConverter\bin\Debug\net7.0-windows\PDFtoWordConverter.runtimeconfig.json" target="lib\net7.0-windows7.0\PDFtoWordConverter.runtimeconfig.json" />
+    <file src="C:\Users\User\Desktop\Convertor\PDFtoWordConverter\PDFtoWordConverter\bin\Debug\net7.0-windows\PDFtoWordConverter.dll" target="lib\net7.0-windows7.0\PDFtoWordConverter.dll" />
+    <file src="C:\Users\User\Desktop\Convertor\PDFtoWordConverter\PDFtoWordConverter\convertor.ico" target="content\convertor.ico" />
+    <file src="C:\Users\User\Desktop\Convertor\PDFtoWordConverter\PDFtoWordConverter\convertor.ico" target="contentFiles\any\net7.0-windows7.0\convertor.ico" />
+  </files>
+</package>
