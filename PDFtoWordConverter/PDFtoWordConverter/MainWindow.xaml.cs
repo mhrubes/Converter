@@ -52,27 +52,19 @@ namespace PDFtoWordConverter
 
         private void Convert_btn_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
         {
-            //this.MaxHeight = 120;
-            //this.MaxWidth = 220;
-
-            //this.Height = 120;
-            //this.Width = 220;
-
             //Convert_btn.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF104D5D"));
             Convert_btn.Background = (Brush)FindResource("onMouseEnterBackgroundColor");
             Convert_btn.FontWeight = FontWeights.Bold;
+
+            Convert_btn.Foreground = Brushes.White;
         }
 
         private void Convert_btn_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
         {
-            //this.MaxHeight = 110;
-            //this.MaxWidth = 200;
-
-            //this.Height = 110;
-            //this.Width = 200;
-
             Convert_btn.Background = (Brush)FindResource("onMouseLeaveBackgroundColor");
             Convert_btn.FontWeight = FontWeights.Normal;
+
+            Convert_btn.Foreground = Brushes.Black;
         }
     }
 }
